@@ -5,17 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="eee84e69-5791-4671-ad29-f875aa0abc03" name="Changes" comment="Initial Commit">
-      <change afterPath="$PROJECT_DIR$/cameraDetection.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/emotion.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/haarcascade_frontalface_default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/splash.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mainWindow.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ui/CameraDetection.ui" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ui/MainWindow.ui" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ui/kameraDetection.ui" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/EmotionDetection.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/EmotionDetection.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TrainEmotionDetection.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/copyCameraDetection.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/emotion_detection_model.h5" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/emotion_detection_model.keras" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/emotion_model.h5" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/emotion_model.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jsontoh5Model.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model.h5" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cameraDetection.py" beforeDir="false" afterPath="$PROJECT_DIR$/cameraDetection.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/emotion.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/haarcascade_frontalface_default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/haarcascade_frontalface_default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/CameraDetection.ui" beforeDir="false" afterPath="$PROJECT_DIR$/ui/CameraDetection.ui" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/MainWindow.ui" beforeDir="false" afterPath="$PROJECT_DIR$/ui/MainWindow.ui" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/kameraDetection.ui" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,7 +58,10 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Python.TrainEmotionDetection.executor": "Run",
+    "Python.cameraDetection.executor": "Run",
     "Python.emotion.executor": "Run",
+    "Python.jsontoh5Model.executor": "Run",
     "Python.main.executor": "Run",
     "Python.mainWindow.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
@@ -62,6 +69,11 @@
     "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
     "last_opened_file_path": "C:/Users/cinar/PycharmProjects/EmotionDetection"
+  },
+  "keyToStringList": {
+    "com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File": [
+      "PLAIN_TEXT"
+    ]
   }
 }]]></component>
   <component name="RecentsManager">
@@ -75,6 +87,50 @@
     </key>
   </component>
   <component name="RunManager" selected="Python.main">
+    <configuration name="TrainEmotionDetection" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="EmotionDetection" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/TrainEmotionDetection.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="cameraDetection" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="EmotionDetection" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/cameraDetection.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="emotion" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="EmotionDetection" />
       <option name="ENV_FILES" value="" />
@@ -89,6 +145,28 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/emotion.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="jsontoh5Model" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="EmotionDetection" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/jsontoh5Model.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -143,6 +221,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.cameraDetection" />
+        <item itemvalue="Python.jsontoh5Model" />
+        <item itemvalue="Python.TrainEmotionDetection" />
         <item itemvalue="Python.mainWindow" />
         <item itemvalue="Python.emotion" />
       </list>
@@ -180,8 +261,19 @@
       <option name="project" value="LOCAL" />
       <updated>1716038367787</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Initial Commit">
+      <option name="closed" value="true" />
+      <created>1717192663352</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1717192663352</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.qss" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">

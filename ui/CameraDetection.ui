@@ -6,15 +6,35 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>843</width>
-    <height>617</height>
+    <width>847</width>
+    <height>626</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>Form</string>
   </property>
   <property name="styleSheet">
-   <string notr="true">background-color: rgb(239, 239, 239);</string>
+   <string notr="true">QWidget
+{
+    color: silver;
+    background-color: #302F2F;
+    selection-background-color:#3d8ec9;
+    selection-color: black;
+    background-clip: border;
+    border-image: none;
+    outline: 0;
+}
+
+QWidget:item:hover
+{
+    background-color: #78879b;
+    color: black;
+}
+
+QWidget:item:selected
+{
+    background-color: #3d8ec9;
+}</string>
   </property>
   <layout class="QVBoxLayout" name="verticalLayout">
    <item>
@@ -27,11 +47,16 @@
      </property>
      <property name="font">
       <font>
-       <family>MS Sans Serif</family>
+       <family>Calibri</family>
        <pointsize>28</pointsize>
-       <weight>75</weight>
-       <bold>true</bold>
+       <weight>50</weight>
+       <bold>false</bold>
       </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel {
+	color: #a9b7c6;
+}</string>
      </property>
      <property name="text">
       <string>Kamera ile Duygu Tespiti</string>
@@ -65,6 +90,11 @@
      </property>
      <property name="layoutDirection">
       <enum>Qt::LeftToRight</enum>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel {
+	color: #a9b7c6;
+}</string>
      </property>
      <property name="frameShape">
       <enum>QFrame::Box</enum>
@@ -101,11 +131,72 @@
        </property>
        <property name="font">
         <font>
-         <family>MS Sans Serif</family>
-         <pointsize>10</pointsize>
-         <weight>75</weight>
-         <bold>true</bold>
+         <family>Calibri</family>
+         <pointsize>12</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
         </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+	border-style: solid;
+	border-top-color: transparent;
+	border-right-color: transparent;
+	border-left-color: transparent;
+	border-bottom-color: transparent;
+	border-width: 1px;
+	border-style: solid;
+	color: #a9b7c6;
+	padding: 2px;
+	background-color: #1e1d23;
+}
+QPushButton::default{
+	border-style: inset;
+	border-top-color: transparent;
+	border-right-color: transparent;
+	border-left-color: transparent;
+	border-bottom-color: #04b97f;
+	border-width: 1px;
+	color: #a9b7c6;
+	padding: 2px;
+	background-color: #1e1d23;
+}
+QPushButton:hover{
+	border-style: solid;
+	border-top-color: transparent;
+	border-right-color: transparent;
+	border-left-color: transparent;
+	border-bottom-color: #37efba;
+	border-bottom-width: 1px;
+	border-style: solid;
+	color: #FFFFFF;
+	padding-bottom: 2px;
+	background-color: #1e1d23;
+}
+QPushButton:pressed{
+	border-style: solid;
+	border-top-color: transparent;
+	border-right-color: transparent;
+	border-left-color: transparent;
+	border-bottom-color: #37efba;
+	border-bottom-width: 2px;
+	border-style: solid;
+	color: #37efba;
+	padding-bottom: 1px;
+	background-color: #1e1d23;
+}
+QPushButton:disabled{
+	border-style: solid;
+	border-top-color: transparent;
+	border-right-color: transparent;
+	border-left-color: transparent;
+	border-bottom-color: #808086;
+	border-bottom-width: 2px;
+	border-style: solid;
+	color: #808086;
+	padding-bottom: 1px;
+	background-color: #1e1d23;
+}</string>
        </property>
        <property name="text">
         <string>Show</string>
@@ -122,11 +213,72 @@
        </property>
        <property name="font">
         <font>
-         <family>MS Sans Serif</family>
-         <pointsize>10</pointsize>
-         <weight>75</weight>
-         <bold>true</bold>
+         <family>Calibri</family>
+         <pointsize>12</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
         </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+	border-style: solid;
+	border-top-color: transparent;
+	border-right-color: transparent;
+	border-left-color: transparent;
+	border-bottom-color: transparent;
+	border-width: 1px;
+	border-style: solid;
+	color: #a9b7c6;
+	padding: 2px;
+	background-color: #1e1d23;
+}
+QPushButton::default{
+	border-style: inset;
+	border-top-color: transparent;
+	border-right-color: transparent;
+	border-left-color: transparent;
+	border-bottom-color: #04b97f;
+	border-width: 1px;
+	color: #a9b7c6;
+	padding: 2px;
+	background-color: #1e1d23;
+}
+QPushButton:hover{
+	border-style: solid;
+	border-top-color: transparent;
+	border-right-color: transparent;
+	border-left-color: transparent;
+	border-bottom-color: #37efba;
+	border-bottom-width: 1px;
+	border-style: solid;
+	color: #FFFFFF;
+	padding-bottom: 2px;
+	background-color: #1e1d23;
+}
+QPushButton:pressed{
+	border-style: solid;
+	border-top-color: transparent;
+	border-right-color: transparent;
+	border-left-color: transparent;
+	border-bottom-color: #37efba;
+	border-bottom-width: 2px;
+	border-style: solid;
+	color: #37efba;
+	padding-bottom: 1px;
+	background-color: #1e1d23;
+}
+QPushButton:disabled{
+	border-style: solid;
+	border-top-color: transparent;
+	border-right-color: transparent;
+	border-left-color: transparent;
+	border-bottom-color: #808086;
+	border-bottom-width: 2px;
+	border-style: solid;
+	color: #808086;
+	padding-bottom: 1px;
+	background-color: #1e1d23;
+}</string>
        </property>
        <property name="text">
         <string>Kapat</string>

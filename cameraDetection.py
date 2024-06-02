@@ -1,29 +1,41 @@
 import sys
 import cv2
+import numpy as np
 from PyQt5 import uic, QtGui, QtCore
 from PyQt5.QtWidgets import QWidget, QApplication
 from PyQt5.QtGui import QImage, QPixmap
 from PyQt5.QtCore import pyqtSlot, QTimer
+from tensorflow.keras.models import load_model
+from tensorflow.keras.preprocessing.image import img_to_array
 
 
 class CameraDetection(QWidget):
 
     def __init__(self):
         super(CameraDetection, self).__init__()
+        print("hello 1")
 
         self.Window = uic.loadUi('ui/CameraDetection.ui', self)
         self.setWindowTitle('Kamerada Tespit')
 
         self.setFixedSize(self.size())
+        print("hello 2")
 
         self.logic = 0
         self.value = 1
         self.cap = None
-
+        print("hello 3")
         self.btnShow.clicked.connect(self.captureClicked)
-
+        print("hello 4")
         self.timer = QTimer()
         self.timer.timeout.connect(self.update_frame)
+        print("hello 5")
+        # Load face detection model and emotion detection model
+        self.face_cascade = cv2.CascadeClassifier(cv2.data.haarcascades + 'haarcascade_frontalface_default.xml')
+        print("hello 6")
+        self.emotion_model = load_model('model.h5')
+        print("hello 7")
+        self.emotions = ["Angry", "Disgust", "Fear", "Happy", "Sad", "Surprise", "Neutral"]
 
     @pyqtSlot()
     def captureClicked(self):
@@ -47,6 +59,23 @@ class CameraDetection(QWidget):
     def update_frame(self):
         ret, frame = self.cap.read()
         if ret:
+            gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
+            faces = self.face_cascade.detectMultiScale(gray, scaleFactor=1.1, minNeighbors=5, minSize=(30, 30))
+
+            for (x, y, w, h) in faces:
+                roi_gray = gray[y:y + h, x:x + w]
+                roi_gray = cv2.resize(roi_gray, (48, 48))
+                roi_gray = roi_gray.astype('float') / 255.0
+                roi_gray = img_to_array(roi_gray)
+                roi_gray = np.expand_dims(roi_gray, axis=0)
+
+                preds = self.emotion_model.predict(roi_gray)[0]
+                emotion_probability = np.max(preds)
+                label = self.emotions[preds.argmax()]
+
+                cv2.putText(frame, label, (x, y - 10), cv2.FONT_HERSHEY_SIMPLEX, 0.9, (255, 0, 0), 2)
+                cv2.rectangle(frame, (x, y), (x + w, y + h), (255, 0, 0), 2)
+
             self.displayImage(frame, 1)
         else:
             print("return not found")
