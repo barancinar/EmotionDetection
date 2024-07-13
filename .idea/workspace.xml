@@ -5,21 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="eee84e69-5791-4671-ad29-f875aa0abc03" name="Changes" comment="Initial Commit">
-      <change afterPath="$PROJECT_DIR$/TrainEmotionDetection.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/copyCameraDetection.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/emotion_detection_model.h5" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/emotion_detection_model.keras" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/emotion_model.h5" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/emotion_model.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jsontoh5Model.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/model.h5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/EmotionDetection.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/EmotionDetection.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cameraDetection.py" beforeDir="false" afterPath="$PROJECT_DIR$/cameraDetection.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/emotion.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/haarcascade_frontalface_default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/haarcascade_frontalface_default.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ui/CameraDetection.ui" beforeDir="false" afterPath="$PROJECT_DIR$/ui/CameraDetection.ui" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ui/MainWindow.ui" beforeDir="false" afterPath="$PROJECT_DIR$/ui/MainWindow.ui" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ui/kameraDetection.ui" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,32 +44,37 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "Python.TrainEmotionDetection.executor": "Run",
-    "Python.cameraDetection.executor": "Run",
-    "Python.emotion.executor": "Run",
-    "Python.jsontoh5Model.executor": "Run",
-    "Python.main.executor": "Run",
-    "Python.mainWindow.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/Users/cinar/PycharmProjects/EmotionDetection"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;Python.TrainEmotionDetection.executor&quot;: &quot;Run&quot;,
+    &quot;Python.cameraDetection.executor&quot;: &quot;Run&quot;,
+    &quot;Python.emotion.executor&quot;: &quot;Run&quot;,
+    &quot;Python.imageDetection.executor&quot;: &quot;Run&quot;,
+    &quot;Python.jsontoh5Model.executor&quot;: &quot;Run&quot;,
+    &quot;Python.main.executor&quot;: &quot;Run&quot;,
+    &quot;Python.mainWindow.executor&quot;: &quot;Run&quot;,
+    &quot;Python.thermal_image.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/cinar/Desktop/OpenCV/EmotionDetection&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
   },
-  "keyToStringList": {
-    "com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File": [
-      "PLAIN_TEXT"
+  &quot;keyToStringList&quot;: {
+    &quot;com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File&quot;: [
+      &quot;PLAIN_TEXT&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\cinar\PycharmProjects\EmotionDetection\videos" />
       <recent name="C:\Users\cinar\PycharmProjects\EmotionDetection" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\cinar\PycharmProjects\EmotionDetection\model" />
       <recent name="C:\Users\cinar\PycharmProjects\EmotionDetection" />
       <recent name="C:\Users\cinar\PycharmProjects\EmotionDetection\ui" />
       <recent name="C:\Users\cinar\PycharmProjects\EmotionDetection\images" />
@@ -131,7 +125,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="emotion" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="imageDetection" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="EmotionDetection" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -144,7 +138,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/emotion.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/imageDetection.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -197,7 +191,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="mainWindow" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="thermal_image" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="EmotionDetection" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -210,7 +204,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/mainWindow.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/thermal_image.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -221,11 +215,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.thermal_image" />
+        <item itemvalue="Python.imageDetection" />
+        <item itemvalue="Python.TrainEmotionDetection" />
         <item itemvalue="Python.cameraDetection" />
         <item itemvalue="Python.jsontoh5Model" />
-        <item itemvalue="Python.TrainEmotionDetection" />
-        <item itemvalue="Python.mainWindow" />
-        <item itemvalue="Python.emotion" />
       </list>
     </recent_temporary>
   </component>
@@ -269,7 +263,15 @@
       <option name="project" value="LOCAL" />
       <updated>1717192663352</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Initial Commit (Open Camera)">
+      <option name="closed" value="true" />
+      <created>1717353081106</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1717353081106</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -289,6 +291,8 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Initial Commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Initial Commit" />
+    <MESSAGE value="Initial Commit (Open Camera)" />
+    <MESSAGE value="fixup! Initial Commit (Last Version)" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixup! Initial Commit (Last Version)" />
   </component>
 </project>
